@@ -1,0 +1,47 @@
+# Session & history data
+sessions/
+history.jsonl
+session-env/
+shell-snapshots/
+paste-cache/
+file-history/
+debug/
+
+# Cache & telemetry
+cache/
+statsig/
+telemetry/
+usage-data/
+
+# Device-specific
+vercel-plugin-device-id
+vercel-plugin-telemetry-preference
+policy-limits.json
+launch.json
+settings.local.json
+ide/
+
+# Backups
+backups/
+
+# Marketplace repos (cloned automatically, not needed in sync)
+plugins/marketplaces/
+plugins/cache/
+plugins/repos/
+
+# Project session data (keep only memory)
+projects/**/*.jsonl
+projects/**/*.meta.json
+projects/**/tool-results/
+projects/**/subagents/
+projects/**/vercel-plugin/
+
+# Exclude all projects except memory folders
+projects/
+!projects/**/memory/
+!projects/**/memory/**
+
+# Ephemeral todos and compiled files
+todos/
+**/__pycache__/
+*.pyc

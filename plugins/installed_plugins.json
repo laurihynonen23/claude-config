@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "plugins": {
+    "skill-creator@daymade-skills": [
+      {
+        "scope": "user",
+        "installPath": "/Users/laurihynonen/.claude/plugins/cache/daymade-skills/skill-creator/1.6.0",
+        "version": "1.6.0",
+        "installedAt": "2026-03-24T11:14:33.099Z",
+        "lastUpdated": "2026-03-24T11:14:33.099Z",
+        "gitCommitSha": "392d34c161043ab7029b3db8204521cd71b983d3"
+      }
+    ],
+    "vercel-plugin@vercel-vercel-plugin": [
+      {
+        "scope": "user",
+        "installPath": "/Users/laurihynonen/.claude/plugins/cache/vercel-vercel-plugin/vercel-plugin/0.25.2",
+        "version": "0.25.2",
+        "installedAt": "2026-04-02T13:23:05.185Z",
+        "lastUpdated": "2026-04-02T13:23:05.185Z",
+        "gitCommitSha": "f7814a911ef2a6cc6872c570e393486368c7bf9e"
+      }
+    ]
+  }
+}
