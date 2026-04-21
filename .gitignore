@@ -29,6 +29,11 @@ plugins/marketplaces/
 plugins/cache/
 plugins/repos/
 
+# Machine-specific plugin state (regenerated on first run)
+plugins/installed_plugins.json
+plugins/known_marketplaces.json
+plugins/install-counts-cache.json
+
 # Project session data (keep only memory)
 projects/**/*.jsonl
 projects/**/*.meta.json

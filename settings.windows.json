@@ -1,29 +1,5 @@
 {
   "model": "opusplan",
-  "hooks": {
-    "Notification": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "afplay /System/Library/Sounds/Ping.aiff",
-            "async": true
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "afplay /System/Library/Sounds/Ping.aiff",
-            "async": true
-          }
-        ]
-      }
-    ]
-  },
   "enabledPlugins": {
     "skill-creator@daymade-skills": true,
     "vercel-plugin@vercel-vercel-plugin": true,
