@@ -4,6 +4,7 @@ param()
 $ErrorActionPreference = "Stop"
 $repoRoot = $PSScriptRoot
 $claudeDir = Join-Path $HOME ".claude"
+$codexDir = Join-Path $HOME ".codex"
 
 function Resolve-Uv {
     $command = Get-Command uv -ErrorAction SilentlyContinue
@@ -45,6 +46,10 @@ New-Item -ItemType Directory -Force -Path $claudeDir | Out-Null
 Copy-Item (Join-Path $repoRoot "CLAUDE.md") (Join-Path $claudeDir "CLAUDE.md") -Force
 Copy-Item (Join-Path $repoRoot "settings.windows.json") (Join-Path $claudeDir "settings.json") -Force
 Copy-Item (Join-Path $repoRoot "skills") $claudeDir -Recurse -Force
+
+Write-Host "Installing shared skills for Codex..."
+New-Item -ItemType Directory -Force -Path $codexDir | Out-Null
+Copy-Item (Join-Path $repoRoot "skills") $codexDir -Recurse -Force
 
 $uv = Resolve-Uv
 Write-Host "Installing or upgrading Graphify..."

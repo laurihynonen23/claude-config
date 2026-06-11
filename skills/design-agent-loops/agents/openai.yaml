@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Loop Designer"
+  short_description: "Design reliable, budget-aware agent loops"
+  default_prompt: "Use $design-agent-loops to inspect this project and suggest the highest-value agent loops to build."

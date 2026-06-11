@@ -16,6 +16,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 The script:
 
 - copies `CLAUDE.md`, Windows settings, and shared skills to `~/.claude`
+- copies the same shared skills to `~/.codex/skills`
 - installs or upgrades the official `graphifyy` package with `uv`
 - registers Graphify globally for Claude Code and Codex
 - enables Codex's `multi_agent` feature when the `codex` command is available
@@ -40,4 +41,22 @@ Refresh the graph after substantial project changes:
 ```text
 Claude Code: /graphify . --update
 Codex:       $graphify . --update
+```
+
+## Designing agent loops
+
+Use the shared loop-design skill to inspect a project, suggest useful recurring
+agent workflows, or turn one goal into a bounded loop with memory and
+verification:
+
+```text
+Claude Code: /design-agent-loops
+Codex:       $design-agent-loops
+```
+
+Example:
+
+```text
+Inspect this project and rank the three highest-value closed agent loops we
+could build. Design a narrow pilot for the best one.
 ```
