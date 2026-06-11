@@ -14,3 +14,7 @@ Keep solutions minimal. Don't add error handling, comments, abstractions, or fea
 
 ## Skills
 Prefer building reusable skills over one-off solutions when a task is likely to recur.
+
+# graphify
+- **graphify** (`~/.claude/skills/graphify/SKILL.md`) - persistent project knowledge graphs for large codebases. Trigger: `/graphify`
+When the user types `/graphify`, invoke the graphify skill before doing anything else.
